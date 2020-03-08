@@ -25,3 +25,40 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## To generate router
+
+ng generate module app-routing --flat --module=app
+
+## Development guide
+
+### Install flex-layout
+
+    - npm i -s @angular/flex-layout @angular/cdk
+
+### Create default layout & module
+
+    - ng g c layout/default
+    - ng g m layout/default
+
+### Create modules component
+
+    - ng g c modules/home
+    - ng g c modules/posts
+    - ng g c modules/login
+
+### Create Shared modules
+
+    - ng g c shared/component/sidebar
+    - ng g c shared/component/header
+    - ng g c shared/component/footer
+    - ng g m shared/
+
+### Create default fullwidth component & module
+
+    - ng g c layout/fullwidth
+    - ng g m layout/fullwidth
+
+# Reference
+
+    - https://github.com/angular/flex-layout
